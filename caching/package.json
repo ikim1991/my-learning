@@ -1,0 +1,22 @@
+{
+  "name": "caching",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon ./src/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "redis": "^3.0.2",
+    "response-time": "^2.3.2"
+  },
+  "devDependencies": {
+    "axios": "^0.21.1",
+    "nodemon": "^2.0.7"
+  }
+}

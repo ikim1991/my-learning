@@ -5,3 +5,4 @@
 ## Table of Contents  
 
 1. Sessions in Node.js  
+2. Redis Caching
