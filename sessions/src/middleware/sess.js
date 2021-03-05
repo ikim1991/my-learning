@@ -10,11 +10,13 @@ const sess = session({
     secret: 'mySecret', // Use environment variable
     saveUninitialized: false,
     resave: false,
-    name: 'sessionId',
+    name: 'sid',
     cookie: {
         secure: false, // Set to true in production. Transmit cookie over https
+        sameSite: true, // Sets CORS
         httpOnly: true, // Prevents client side JS from reading the cookie
         maxAge: (1000 * 60 * 30) // Session max age in ms
+        
     }
 })
 
