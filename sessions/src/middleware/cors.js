@@ -10,7 +10,7 @@ const corsConfig = {
             cb(new Error("Not allowed by CORS"))
         }
     },
-    credentials: true
+    credentials: true // Allows Cookies to be accepted from Cross Origin Domains. Sets Access-Control-Allow-Credentials header to true
 }
 
 export default cors(corsConfig);
