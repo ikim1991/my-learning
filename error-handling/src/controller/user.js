@@ -78,3 +78,15 @@ export const setPokemon = async (req, res, next) => {
     }
 
 }
+
+export const userLogout = async (req, res, next) => {
+    
+    try{
+        await req.session.destory
+    } catch(err){
+        return next(ApiError.badRequest('Logout Unsuccessful, please try again...'))
+    }
+    
+    res.clearCookie('sessionID')
+    res.send('COOKIE CLEARED - SESSION ENDED')
+}
